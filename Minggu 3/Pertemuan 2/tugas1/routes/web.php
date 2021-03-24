@@ -26,5 +26,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[ManagementUserController::class,'index']);
 Route::get('/home',[ManagementUserController::class,'home']);
 Route::get('/user',[ManagementUserController::class,'index']);
+//Route::get("/user",function(){
+  // return view("index");
+//});
 Route::get('/user/create',[ManagementUserController::class,'create']);
 Route::get('/user/{id}/edit',[ManagementUserController::class,'edit']);
+Route::get("/home",function(){
+   return view("home");
+});
